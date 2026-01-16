@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Lato:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #396E94;
+    --secondary-color: #E7C24F;
+    --accent1-color: #A43312;
+    --accent2-color: #381D2A;
+
+    --heading-font: "IM Fell French Canon SC", serif;
+    --paragraph-font: "Lato", Helvetica, sans-serif;
+
+    --headline-color-on-white: black;
+    --headline-color-on-color: #FFFFFF;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: #FFFFFF;
+    --paragraph-background-color: #396E94;
+
+    --nav-link-color: #FFFFFF;
+    --nav-background-color: #396E94;
+    --nav-hover-link-color: #381D2A;
+    --nav-hover-background-color: #E7C24F;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--headline-color-on-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.colors {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.colors th,
+.colors td {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.primary { background-color: #396E94; }
+.secondary { background-color: #E7C24F; color: black; }
+.accent1 { background-color: #A43312; }
+.accent2 { background-color: #381D2A; }
+
+nav {
+    background-color: var(--nav-background-color);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+footer {
+    background-color: var(--accent2-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
